@@ -1,0 +1,6 @@
+{
+    "parent": "civilization:item/large_item",
+    "textures": {
+        "layer0": "civilization:items/item_large_gem_amethyst"
+    }
+}

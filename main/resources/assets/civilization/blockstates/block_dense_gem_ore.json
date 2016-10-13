@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "type=diamond": { "model":"civilization:block_dense_gem_ore_diamond" },
+        "type=ruby": { "model":"civilization:block_dense_gem_ore_ruby" },
+        "type=emerald": { "model":"civilization:block_dense_gem_ore_emerald" },
+        "type=sapphire": { "model":"civilization:block_dense_gem_ore_sapphire" },
+        "type=amber": { "model":"civilization:block_dense_gem_ore_amber" },
+        "type=onyx": { "model":"civilization:block_dense_gem_ore_onyx" },
+        "type=moonstone": { "model":"civilization:block_dense_gem_ore_moonstone" },
+        "type=amethyst": { "model":"civilization:block_dense_gem_ore_amethyst" }
+    }
+}

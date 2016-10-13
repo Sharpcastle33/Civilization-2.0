@@ -1,0 +1,16 @@
+[
+{
+  "modid": "civilization",
+  "name": "The Civilization Mod",
+  "description": "/r/civevolved",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sharpcastle33"],
+  "credits": "Sharpcastle33",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

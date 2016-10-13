@@ -1,0 +1,6 @@
+{
+    "parent": "civilization:item/small_item",
+    "textures": {
+        "layer0": "civilization:items/item_small_gem_moonstone"
+    }
+}

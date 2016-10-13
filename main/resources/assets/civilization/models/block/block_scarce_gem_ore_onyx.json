@@ -1,0 +1,6 @@
+{
+    "parent":"block/cube_all",
+    "textures": {
+        "all": "civilization:blocks/block_scarce_gem_ore_onyx"
+    }
+}
