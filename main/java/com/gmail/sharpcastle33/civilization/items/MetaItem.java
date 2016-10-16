@@ -6,6 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+@Deprecated
 public abstract class MetaItem extends Item{
 
 	public final int subtypes;
@@ -42,3 +43,4 @@ public abstract class MetaItem extends Item{
 	
 	
 }
+//depreciated

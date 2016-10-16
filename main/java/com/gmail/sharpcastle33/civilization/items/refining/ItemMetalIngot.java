@@ -1,11 +1,11 @@
 package com.gmail.sharpcastle33.civilization.items.refining;
 
 import com.gmail.sharpcastle33.civilization.creativetabs.CivilizationTabs;
-import com.gmail.sharpcastle33.civilization.items.MetaItem;
+//import com.gmail.sharpcastle33.civilization.items.MetaItem;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-public class ItemMetalIngot extends MetaItem {
+/*public class ItemMetalIngot extends MetaItem {
 
 	public final static int subtypes = 10;
 	public final static String[] names = {"iron","copper","tin","lead","silver","gold","platinum","zinc","mithrine","adamantium"};
@@ -18,3 +18,6 @@ public class ItemMetalIngot extends MetaItem {
 	}
 
 }
+*/
+
+//depreciated
