@@ -3,6 +3,8 @@ package com.gmail.sharpcastle33.civilization.main;
 import com.gmail.sharpcastle33.civilization.blocks.CivilizationBlocks;
 import com.gmail.sharpcastle33.civilization.items.CivilizationItems;
 
+import net.minecraft.item.Item;
+
 /**
  * CommonProxy is used to set up the mod and start it running.  It contains all the code that should run on both the
  *   Standalone client and the dedicated server.
@@ -30,4 +32,6 @@ public abstract class CommonProxy {
 	public void postInit(){
 		
 	}
+	
+	public void registerItemRenderer(Item item, int meta, String id){}
 }

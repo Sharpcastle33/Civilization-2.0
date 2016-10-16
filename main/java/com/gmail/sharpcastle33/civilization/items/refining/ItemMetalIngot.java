@@ -13,6 +13,7 @@ public class ItemMetalIngot extends MetaItem {
 	public ItemMetalIngot(String name) {
 		super(name, subtypes, names);
 		this.setCreativeTab(CivilizationTabs.tabCivilizationRefining);
+		//this.setRegistryName(name);
 		// TODO Auto-generated constructor stub
 	}
 

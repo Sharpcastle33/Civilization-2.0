@@ -6,7 +6,7 @@ import com.gmail.sharpcastle33.civilization.items.refining.ItemAlloyIngot;
 import com.gmail.sharpcastle33.civilization.items.refining.ItemMetalIngot;
 import com.gmail.sharpcastle33.civilization.main.Civilization;
 
-import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CivilizationItems {
@@ -16,12 +16,22 @@ public class CivilizationItems {
 	public static ItemSmallGem smallGem;
 	public static ItemMetalIngot metalIngot;
 	public static ItemAlloyIngot alloyIngot;
+	public static BaseItem testItem;
 	
 	public static void load(){
 		GameRegistry.registerItem(largeGem = new ItemLargeGem("item_large_gem"), "item_large_gem");
 		GameRegistry.registerItem(smallGem = new ItemSmallGem("item_small_gem"), "item_small_gem");
 		GameRegistry.registerItem(metalIngot = new ItemMetalIngot("item_metal_ingot"), "item_metal_ingot");
 		GameRegistry.registerItem(alloyIngot = new ItemAlloyIngot("item_alloy_ingot"), "item_alloy_ingot");
+		
+		//baseitem testing.
+		testItem = regBaseItem(new BaseItem("test_item").setCreativeTab(CreativeTabs.MATERIALS));
+	}
+	
+	public static BaseItem regBaseItem(BaseItem i){
+		GameRegistry.register(i);
+		i.registerItemModel();
+		return i;
 	}
 	
 }

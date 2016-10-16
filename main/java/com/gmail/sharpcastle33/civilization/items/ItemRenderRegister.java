@@ -44,16 +44,18 @@ public final class ItemRenderRegister {
 		}
 		ModelBakery.registerItemVariants(CivilizationItems.metalIngot, resLoc);*/
 		
+		System.out.println("registering resource locations");
 		registerResourceLocations(CivilizationItems.metalIngot);
 		registerResourceLocations(CivilizationItems.alloyIngot);
 	}
 	
 	public static void registerResourceLocations(MetaItem i){
 		ResourceLocation[] resLocs = new ResourceLocation[i.subtypes];
-		final String types[] = i.names;
 		for(int m=0; m<i.subtypes; m++){
-			resLocs[m] = new ResourceLocation("civilization:" + i.getBaseName() + "_" + i.getMetaName(m));
+			System.out.println("registering: " + modid + ":" + i.getBaseName().substring(5) + "_" + i.getMetaName(m));
+			resLocs[m] = new ResourceLocation(modid + ":" + i.getBaseName().substring(5) + "_" + i.getMetaName(m));
 		}
+		System.out.println("Registered model locations for: " + resLocs.toString());
 		ModelBakery.registerItemVariants(i,resLocs);
 	}
 	
@@ -85,15 +87,18 @@ public final class ItemRenderRegister {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 	    .register(item, meta, new ModelResourceLocation(modid +":"+ file, "inventory"));
 	}
-	
+	 
 	public static void reg(Item item) {
 	    Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 	    .register(item, 0, new ModelResourceLocation(modid + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
-	
+	/*
+	 * This method does not work as intended. Outputs look like "item.item_alloy_ingot" when they should look like "item_alloy_ingot_bronze"
+	 */
 	public static void regMetaItem(MetaItem item){
 		for(int meta = 0; meta < item.subtypes; meta++){
-			reg(item, meta, item.getUnlocalizedName());
+			reg(item, meta, modid + ":" + item.getBaseName().substring(5) + "_" + item.getMetaName(meta));
+			System.out.println("Registered item with new method, name = " + modid + ":" + item.getBaseName().substring(5) + "_" + item.getMetaName(meta));
 		}
 	}
 }
