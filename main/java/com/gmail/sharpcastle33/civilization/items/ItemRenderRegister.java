@@ -45,7 +45,7 @@ public final class ItemRenderRegister {
 		ModelBakery.registerItemVariants(CivilizationItems.metalIngot, resLoc);*/
 		
 		System.out.println("registering resource locations");
-		registerResourceLocations(CivilizationItems.metalIngot);
+		//registerResourceLocations(CivilizationItems.metalIngot);
 		registerResourceLocations(CivilizationItems.alloyIngot);
 	}
 	
@@ -79,7 +79,7 @@ public final class ItemRenderRegister {
 		reg(CivilizationItems.smallGem, 6, "item_small_gem_moonstone");
 		reg(CivilizationItems.smallGem, 7, "item_small_gem_amethyst");
 		
-		regMetaItem(CivilizationItems.metalIngot);
+		//regMetaItem(CivilizationItems.metalIngot);
 		regMetaItem(CivilizationItems.alloyIngot);
 	}
 	
