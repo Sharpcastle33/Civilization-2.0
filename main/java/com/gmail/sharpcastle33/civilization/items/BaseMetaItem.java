@@ -13,9 +13,9 @@ public class BaseMetaItem extends BaseItem{
 	protected final int subtypes;
 	protected final String[] names;
 	
-	public BaseMetaItem(String name, int subtypes, String[]names) {
+	public BaseMetaItem(String name, String[]names) {
 		super(name);
-		this.subtypes = subtypes;
+		subtypes = names.length;
 		this.names = names;
 		this.setHasSubtypes(true);
 	}

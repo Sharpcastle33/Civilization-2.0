@@ -6,6 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+//use BaseMetaItem instead
 @Deprecated
 public abstract class MetaItem extends Item{
 

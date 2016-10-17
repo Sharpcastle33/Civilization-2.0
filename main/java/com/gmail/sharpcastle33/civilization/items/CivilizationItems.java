@@ -16,19 +16,19 @@ public class CivilizationItems {
 	public static BaseMetaItem metalIngot;
 	public static BaseMetaItem alloyIngot;
 	public static BaseItem testItem;
+	public static BaseMetaItem metalOre;
 	
 	public static void load(){
 		GameRegistry.registerItem(largeGem = new ItemLargeGem("item_large_gem"), "item_large_gem");
-		GameRegistry.registerItem(smallGem = new ItemSmallGem("item_small_gem"), "item_small_gem");
-		//GameRegistry.registerItem(metalIngot = new ItemMetalIngot("item_metal_ingot"), "item_metal_ingot");
-		//GameRegistry.registerItem(alloyIngot = new ItemAlloyIngot("item_alloy_ingot"), "item_alloy_ingot");
-		
+		GameRegistry.registerItem(smallGem = new ItemSmallGem("item_small_gem"), "item_small_gem"); 
 		//baseitem testing.
-		testItem = regBaseItem(new BaseItem("test_item").setCreativeTab(CreativeTabs.MATERIALS));
+		//testItem = regBaseItem(new BaseItem("test_item").setCreativeTab(CreativeTabs.MATERIALS));
 		
 		
-		alloyIngot = regBaseMetaItem(new BaseMetaItem("item_alloy_ingot",4,new String[]{"bronze","brass","mithril","admantine"}).setCreativeTab(CivilizationTabs.tabCivilizationRefining));
-		metalIngot = regBaseMetaItem(new BaseMetaItem("item_metal_ingot",10,new String[]{"iron","copper","tin","lead","silver","gold","platinum","zinc","mithrine","adamantium"}).setCreativeTab(CivilizationTabs.tabCivilizationRefining));
+		alloyIngot = regBaseMetaItem(new BaseMetaItem("item_alloy_ingot",new String[]{"bronze","brass","mithril","admantine"}).setCreativeTab(CivilizationTabs.tabCivilizationRefining));
+		metalIngot = regBaseMetaItem(new BaseMetaItem("item_metal_ingot",new String[]{"iron","copper","tin","lead","silver","gold","platinum","zinc","mithrine","adamantium"}).setCreativeTab(CivilizationTabs.tabCivilizationRefining));
+		metalOre = regBaseMetaItem(new BaseMetaItem("item_metal_ore",new String[]{"iron","copper","tin","lead","silver","gold","platinum","zinc","mithrine","adamantium"}).setCreativeTab(CivilizationTabs.tabCivilizationRefining));
+
 	}
 	
 	public static BaseItem regBaseItem(BaseItem i){
