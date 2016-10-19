@@ -1,4 +1,4 @@
-package com.gmail.sharpcastle33.seasons;
+package com.gmail.sharpcastle33.civilization.seasons;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.WorldSavedData;

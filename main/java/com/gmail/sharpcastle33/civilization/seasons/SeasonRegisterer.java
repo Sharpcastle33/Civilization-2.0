@@ -1,4 +1,4 @@
-package com.gmail.sharpcastle33.seasons;
+package com.gmail.sharpcastle33.civilization.seasons;
 
 import java.util.Map;
 

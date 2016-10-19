@@ -1,6 +1,6 @@
 package com.gmail.sharpcastle33.civilization.main;
 
-import com.gmail.sharpcastle33.seasons.SeasonHandler;
+import com.gmail.sharpcastle33.civilization.seasons.SeasonHandler;
 
 /**
  * DedicatedServerProxy is used to set up the mod and start it running on dedicated servers.  It contains all the code that should run on the
