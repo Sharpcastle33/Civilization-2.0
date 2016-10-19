@@ -12,5 +12,7 @@ public class Season {
 	public Season(int length){
 		this.length = length;
 	}
+	
+	
 
 }

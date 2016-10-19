@@ -5,6 +5,9 @@ import net.minecraft.world.WorldSavedData;
 
 public class SeasonWorldSavedData extends WorldSavedData{
 	
+	public String currentSeason;
+	public int currentDay;
+	
 	public SeasonWorldSavedData(String name){
 		super(name);
 	}

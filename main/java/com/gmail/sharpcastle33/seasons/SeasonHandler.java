@@ -1,17 +1,48 @@
 package com.gmail.sharpcastle33.seasons;
 
+import java.util.Map;
+
 import net.minecraft.world.World;
-import net.minecraft.world.storage.MapStorage;
 
 public class SeasonHandler {
 	
-	public int currentSeason;
-	public int currentDay;
+	Map<String,Season> currentSeason;
+	Map<String,Integer> currentDay;
 	
-	public String getFormattedDate(){
-		return "";
+	public SeasonHandler(){
+		loadData();
 	}
 	
+	public String getFormattedDate(World w){
+		return getFormattedDate(w.getWorldInfo().getWorldName());
+	}
+	
+	public String getFormattedDate(String w){
+		return currentDay.get(w) + " of " + currentSeason.get(w);
+	}
+	
+	public void announceSeasonsChange(String w){
+		
+	}
+	
+	public void saveData(){
+		
+	}
+	
+	public void loadData(){
+		
+	}
+	
+	public void tickDay(){
+	
+	}
+	
+	public void tickSeason(){
+		
+	}
+	
+	
+	/*
 	public void tickDay(World world){
 		MapStorage storage = world.getPerWorldStorage();
 		storage.setData("season", currentSeason);
@@ -27,18 +58,6 @@ public class SeasonHandler {
 	
 	public void tickSeason(World world){
 		
-	}
-	
-	public void announceSeason(World world){
-		
-	}
-	
-	public void saveData(World world){
-		
-	}
-	
-	public void loadData(World world){
-		
-	}
+	}*/
 
 }

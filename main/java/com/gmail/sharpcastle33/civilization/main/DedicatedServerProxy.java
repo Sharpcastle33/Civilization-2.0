@@ -1,10 +1,15 @@
 package com.gmail.sharpcastle33.civilization.main;
+
+import com.gmail.sharpcastle33.seasons.SeasonHandler;
+
 /**
  * DedicatedServerProxy is used to set up the mod and start it running on dedicated servers.  It contains all the code that should run on the
  *   dedicated servers.  This is almost never required.
  *   For more background information see here http://greyminecraftcoder.blogspot.com/2013/11/how-forge-starts-up-your-code.html
  */
 public class DedicatedServerProxy extends CommonProxy{
+	
+	public SeasonHandler seasonHandler;
 
 	  /**
 	   * Run before anything else. Read your config, create blocks, items, etc, and register them with the GameRegistry
@@ -19,6 +24,7 @@ public class DedicatedServerProxy extends CommonProxy{
 	   */
 	  public void init() {
 	    super.init();
+	    SeasonHandler seasonHandler = new SeasonHandler();
 	  }
 
 	  /**
