@@ -13,6 +13,10 @@ public class Season {
 		this.length = length;
 	}
 	
+	public void setGlobalTemp(double d){
+		globalTemp = d;
+	}
+	
 	
 
 }

@@ -17,6 +17,7 @@ public class SeasonRegisterer {
 	private Season[] worldSeasons = new Season[]{spring,summer,fall,winter};
 	
 	public SeasonRegisterer(){
+		spring.setGlobalTemp(2.0);
 		registerSeasons("world",worldSeasons);
 	}
 	
