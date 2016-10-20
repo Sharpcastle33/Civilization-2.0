@@ -37,10 +37,6 @@ public class SeasonHandler {
 	
 	}
 	
-	public void tickSeason(){
-		
-	}
-	
 	
 	/*
 	public void tickDay(World world){
